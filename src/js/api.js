@@ -10,7 +10,7 @@ var api = {
     ];
   },
   comics: function (characterId, callback) {
-    return $.get('/data/comics-' + characterId + '.json', function (response) {
+    $.get('/data/comics-' + characterId + '.json', function (response) {
       callback(response);
     });
   }
