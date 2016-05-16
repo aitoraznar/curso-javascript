@@ -1,6 +1,6 @@
 # Documentacion
 
-[Aquí](https://docs.google.com/document/d/1jGbfq_UZMxu8MAIPc4Tze09r8mtgqWsOohPrbN674hU/edit?usp=sharing)
+[Aquí](https://drive.google.com/open?id=0BwkYx3waNF8VTGx3TzVwU3pkSUE)
 
 # Branches
 
