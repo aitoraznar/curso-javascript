@@ -1,6 +1,18 @@
-$(document).on('ready', function () {
+var $comboPersonaje1;
+var $comboPersonaje2;
+var $resultadosTable = $('#resultados');
+var $resultadosTableBody = $('tbody', $resultadosTable);
+var resultComicTableRowTemplate;
+var controller = Controller();
 
-  // Ejemplo de cómo meter un <option> al primer <select>
-  $('#personaje1').append("<option value=\"1234\">Súper López</option>");
+    $(document).on('ready', function () {
+  $comboPersonaje1 = $('#personaje1');
+  $comboPersonaje2 = $('#personaje2');
+  var btnBuscar = document.getElementById('boton-buscar');
+  resultComicTableRowTemplate = document.getElementById('resultComicTableRowTemplate');
+
+  api.characters(controller.handleCharacters);
+
+  btnBuscar.onclick = controller.buscarComics;
 
 });
